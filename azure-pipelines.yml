@@ -10,16 +10,16 @@ variables:
 
 
 jobs:
-  - job: Run on linux
+  - job: RunOnlinux
     pool:
-    vmImage: ubuntu-latest
+      vmImage: ubuntu-latest
     steps:
       - task: UseDotNet@2
         displayName: testuing in linux
         inputs:
           command: test
         
-  - job: Run on Windows
+  - job: RunOnWindows
     pool: 
       vmImage: windows-latest
     steps: 
